@@ -9,14 +9,14 @@
   --footer-bgd-color: #2f303a;
   --main-font: Roboto, sans-serif;
   --accent-font: Raleway, sans-serif;
+  --accent-color-2: #000000;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   letter-spacing: 0.03em;
   color: --main-color;
-  background-color: #ffffff;
 }
 .link {
   text-decoration: none;
@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--accent-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -36,42 +36,40 @@ body {
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-studio {
-  color: #000000;
+  color: var(--accent-color-2);
 }
 
 .top-nav {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
 .link-nav {
-  ont-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   color: #757575;
 }
 
 .nav-link {
-  color: #212121;
+  color: var(--main-color);
 }
 
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .b-color:hover,
@@ -82,123 +80,80 @@ body {
 }
 
 .contact-link {
-  color: #757575;
+  color: var(--primary-color);
 }
 
 .nav-button {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.3;
   /* or 136% */
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--main-bgd-color);
 }
 
 .info {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   /* or 171% */
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-color);
 }
 
-.info {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.info {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.info {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
 .person {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.1;
   /* identical to box height */
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-color);
 }
 
 .logo-end {
-  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   /* identical to box height */
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-end-studio {
-  color: #000000;
+  color: var(--accent-color-2);
 }
 
 .link-end {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   /* or 171% */
 
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .link-post {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -217,42 +172,41 @@ body {
 }
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--footer-bgd-color);
 }
 
 .b-color {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8;
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
 
 .hero-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.3;
   /* or 136% */
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bgd-color);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .link-end:hover,
@@ -261,7 +215,7 @@ body {
 .link-post:focus,
 .link-tel:hover,
 .link-tel:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* PORTFOLIO */
@@ -283,7 +237,7 @@ body {
 .filter-btn:active {
   background-color: #2293f0;
   /* shadow-middle */
-  color: #ffffff;
+  color: var(--secondary-color);
   border: none;
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -292,7 +246,6 @@ body {
 }
 
 .infa {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -301,32 +254,66 @@ body {
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-color);
 }
 
 .filter-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--main-color);
 }
 
 .top-nav .nav-link.current {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .look {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--main-color);
+}
+
+.about {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+
+.about-p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  /* identical to box height */
+
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+
+.oc {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
 }
