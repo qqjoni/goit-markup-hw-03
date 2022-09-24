@@ -317,3 +317,13 @@ body {
 
   color: var(--main-color);
 }
+.oc {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
